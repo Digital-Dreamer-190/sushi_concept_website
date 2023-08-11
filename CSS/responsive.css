@@ -1,0 +1,204 @@
+
+
+
+
+
+
+/*Teblet Layout*/
+@media only screen and (min-width:200px) and (max-width:1150px){
+    .search { width: 150px;}
+}
+
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:991px){
+    .search { width: 150px;}
+    .header_content, .header_content img, .inner_header_content {height: 600px;}
+    .inner_header_content p { font-size: 18px; width: 65%;}
+    .inner_header_content a { font-size: 20px; width: 204px;  padding: 7px;}
+    .menu_card {width: 180px;}
+    .card_img img {width: 180px; height: 180px;}
+    .popular_menu .shap img:nth-child(1) { width: 71px; top: 143px; left: 58px;}
+    .menu_content p { font-size: 18px;}
+    .popular_menu .shap img:nth-child(6) { left: 144px; top: -52px;}
+    .item_section_1 .item_content .item_info h2 { font-size: 65px;}
+    .item_section_1 .item_content .item_info p { font-size: 17px; margin: 10px 0 45px;}
+    .item_section_1 .item_content .item_info a {font-size: 24px; padding: 3px 43px;}
+    .item_section_1 .shap img:nth-child(1) { top: 97px; left: 327px; width: 70px;}
+    .item_section_1 .shap img:nth-child(2) { top: 118px; left: 7px; width: 101px;}
+    .item_section_1 .shap img:nth-child(3) { bottom: 71px; right: -28px;width: 127px;}
+    .item_section_1 .shap img:nth-child(4) { top: 19px; right: 37px; width: 49px;}
+    .item_section_1 .shap img:nth-child(5) { bottom: 28px; width: 53px;}
+    .statistic .inner_statistic .statistic_info p { font-size: 20px;}
+    .statistic .inner_statistic .statistic_card_section .statistic_card p { height: 190px; width: 190px; padding-top: 45px; line-height: 0.6em; font-size: 65px;}
+    .statistic .inner_statistic .statistic_card_section .statistic_card p samp { font-size: 30px;}
+    .statistic .shap img:nth-child(1) { top: 206px; left: 36px; width: 60px;}
+    .statistic .shap img:nth-child(2) { bottom: 135px; right: 16px; width: 60px;}
+    .statistic .shap img:nth-child(3) {top: 25px; right: 27px; width: 95px;}
+    .statistic .shap img:nth-child(4) { bottom: -45px; left: 191px; width: 132px;}
+    .statistic .shap img:nth-child(5) { top: 2px; left: 84px; width: 54px;}
+    .statistic .shap img:nth-child(6) { bottom: 4px;  right: 246px; width: 56px;}
+    .item_section_2 .item_content .item_info h2 { font-size: 65px; }
+    .item_section_2 .item_content .item_info p { font-size: 17px; margin: 10px 0 45px;}
+    .item_section_2 .item_content .item_info a {font-size: 24px; padding: 3px 43px;}
+    .item_section_2 .shap img:nth-child(1) { top: 89px; left: 99px; width: 60px;}
+    .item_section_2 .shap img:nth-child(2) { top: 108px; right: 56px; width: 110px;}
+    .item_section_2 .shap img:nth-child(3) { bottom: 26px; left: 275px; width: 111px;}
+    .item_section_2 .shap img:nth-child(4) { top: -13px; left: 364px; width: 55px;}
+    .item_section_2 .shap img:nth-child(5) { width: 50px;}
+    .about_section, .inner_about, .about_section .about_bg img { height: 615px;}
+    .inner_about .about_img img { width: 200px;}
+    .inner_about .about_info p { font-size: 20px;}
+    .inner_about .about_info h3 { font-size: 30px;}
+    .subscribe_info { padding: 100px 0;}
+    .subscribe_info p { font-size: 20px;}
+    .subscribe_info h2 { font-size: 65px;}
+    .subscribe_info form, .subscribe_info form input { height: 50px; width: 550px;}
+    .subscribe_info form button { height: 50px; width: 180px;}
+    .subscribe .shap img:nth-child(5) { top: 13px; left: 113px; width: 45px;}
+    .subscribe .shap img:nth-child(2) { bottom: 46px; left: 52px; width: 65px;}
+    .subscribe .shap img:nth-child(4) { bottom: -22px; left: 337px; width: 100px;}
+    .subscribe .shap img:nth-child(6) { bottom: 66px; right: 10px; width: 47px;}
+    .subscribe .shap img:nth-child(3) { top: 41px; right: -11px; width: 100px;}
+    .subscribe .shap img:nth-child(1) { top: 88px; right: 194px; width: 60px;} 
+}
+
+/*Mobile menu Layout*/
+@media only screen and (min-width:200px) and (max-width:850px){
+    .nav_area{
+        position: fixed;
+        height: calc(100vh - 3rem); 
+        background: #21243d;
+        width: 100%;   
+        left: 0;
+        top: 3rem;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: .7s;
+    }
+    #check:checked ~ .nav_area{
+        transform: translateX(0);
+    }
+       .nav{
+        width: 100%;
+        height: 60%;
+    }
+    .nav ul{
+        padding: 15px 40px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .search_bar{
+        width: 60%;
+    }
+    .search_bar form{
+        max-width: 100%;
+    }
+    .search{
+        max-width: 100%;
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .search_icon{opacity: 1; transform: translateX(0)}
+    .search_icon_opner{display: none;}
+    .nav ul li a {line-height: 3rem;}
+    .inner_header_navigation{ justify-content: space-between;}
+    .mobile_menu{ display: flex;}
+    #check{ display: block;}
+}
+
+
+
+
+/*Mobile Layout*/
+
+@media only screen and (min-width:200px) and (max-width:480px){
+    .header_content, .header_content img, .inner_header_content {height: 500px;}
+    .inner_header_content h1 { font-size: 55px;}
+    .inner_header_content p { font-size: 15px; width: 80%;}
+    .inner_header_content a { font-size: 17px; width: 175px; padding: 3px;}
+    .menu_content h2 { font-size: 45px;}
+    .menu_content p { font-size: 17px; width: 90%; }
+    .menu_card_section { flex-direction: column; align-items: center;}
+    .menu_card { width: 215px; margin-bottom: 50px; z-index: 10;}
+    .card_img img { width: 215px; height: 215px;}
+    .popular_menu .shap img:nth-child(1) { top: 20px; left: 22px;}
+    .popular_menu .shap img:nth-child(3) { top: 346px; right: -75px;}
+    .popular_menu .shap img:nth-child(6) { left: 51px;  top: 552px; transform: rotate(109deg); }
+    .item_section_1 .item_content { flex-direction: column; width: 96%; margin: 80px 0 150px;}
+    .item_section_1 .item_content .item_img img { width: 100%;}
+    .item_section_1 .item_content .item_img { width: 76%;}
+    .item_section_1 .item_content .item_info { width: 86%;}
+    .item_section_1 .item_content .item_info h2 { font-size: 60px;}
+    .statistic .inner_statistic .statistic_card_section { flex-direction: column; width: 87%; margin-top: 60px;}
+    .statistic .inner_statistic .statistic_card_section .statistic_card { margin-inline: auto;}
+    .statistic .inner_statistic .statistic_info p { width: 90%;}
+    .statistic .inner_statistic .statistic_card_section .statistic_card p { padding-top: 55px; line-height: 0.7em; font-size: 72px; margin: 20px 0; height: 230px; width: 230px;}
+    .statistic .inner_statistic .statistic_card_section .statistic_card p samp { font-size: 40px;}
+    .item_section_2 .item_content { flex-direction: column-reverse; width: 96%; margin: 80px 0 150px;}
+    .item_section_2 .item_content .item_img img { width: 100%;}
+    .item_section_2 .item_content .item_img { width: 76%;}
+    .item_section_2 .item_content .item_info { width: 86%;}
+    .item_section_2 .item_content .item_info h2 { font-size: 60px;}
+    .inner_about .about_info p { width: 90%;}
+    .subscribe_info p { width: 90%;}
+    .subscribe_info form, .subscribe_info form input { height: 50px; width: 315px; z-index: 10; font-size: 18px;}
+    .subscribe_info form button { position: static; width: 315px; margin-top: 15px;}
+    .inner_footer { flex-direction: column;}
+    .title, .about, .services, .other{ margin-bottom: 30px;}
+    
+
+
+
+}
+    
+
+@media only screen and (min-width:200px) and (max-width:850px){
+    .nav_area{
+        position: fixed;
+        height: calc(100vh - 3rem); 
+        background: #21243d;
+        width: 100%;   
+        left: 0;
+        top: 3rem;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: .7s;
+    }
+    #check:checked ~ .nav_area{
+        transform: translateX(0);
+    }
+    .nav{
+        width: 100%;
+        height: 60%;
+    }
+    .nav ul{
+        padding: 15px 40px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .search_bar{
+        width: 60%;
+    }
+    .search_bar form{
+        max-width: 100%;
+    }
+    .search{
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+    .search_icon{display: block;}
+    .search_icon_opner{display: none;}
+    .nav ul li a {line-height: 3rem;}
+    .inner_header_navigation{ justify-content: space-between;}
+    .mobile_menu{ display: flex;}
+    #check{ display: block;}
+}
